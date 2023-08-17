@@ -1,0 +1,25 @@
+{
+  "name": "simple-vcr-videoapp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple video app for two-person video conference.",
+  "main": "server.js",
+  "homepage": ".",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "mega.siswanto@vonage.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "neru-alpha": "^3.0.0",
+    "opentok": "^2.16.0",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>VCR Video App</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link href="css/ve.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+
+  <link rel="prefetch" href="assets/vonage.png" />
+
+  <script src="lib/video-express-1.5.3.js"></script>
+  <script src="lib/axios.min.js"></script>
+</head>
+
+<body class="simple-vcr-videoapp">
+  <form id="login" action="javascript:login()">
+    <label for="name">Name</label>
+    <input type="text" id="userName" name="userName" placeholder="Your Name" required />
+
+    <label for="room">Room Name</label>
+    <input type="text" id="roomName" name="roomName" placeholder="Room Name" required />
+
+    <div style="height:20px"></div>
+
+    <input id="login-button" type="submit" value="Join">
+    <div id="login-loader" class="loader hide"></div>
+  </form>
+
+  <div id="controls" class="hide">
+    <div class="wrapper">
+      <button id="change-publish-video" onclick="videoToggle()">
+        <img id="video-on" src="icons/videocam_on.svg" />
+        <img id="video-off" src="icons/videocam_off.svg" class="hide" />
+      </button>
+      <button id="change-publish-audio" onclick="audioToggle()">
+        <img id="audio-on" src="icons/mic_on.svg" />
+        <img id="audio-off" src="icons/mic_off.svg" class="hide" />
+      </button>
+      <button id="screen-share" onclick="screenShareToggle()">
+        <img id="screen-share-false" src="icons/screenshare_on.svg" />
+        <img id="screen-share-true" src="icons/screenshare_off.svg" class="hide" />
+      </button>
+    </div>
+  </div>
+
+  <div id="roomContainer"></div>
+
+  <img id="vonage-logo" class="vonage-logo" src="assets/vonage.png" />
+
+  <script rel="preload" type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

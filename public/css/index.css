@@ -1,0 +1,142 @@
+.simple-vcr-videoapp {
+  background-image: linear-gradient(to right bottom, #861dfe, #a20be6, #b303d0, #bc0fbc, #c120aa, #ce2d9d, #d73c93, #dc4c8a, #ea6284, #f37881, #fa8f83, #fea589);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.simple-vcr-videoapp .vonage-logo {
+  height: 100px;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.simple-vcr-videoapp .hide {
+  display: none !important;
+}
+
+.simple-vcr-videoapp a {
+  color: #861DFE;
+  transition: 0.7s;
+}
+.simple-vcr-videoapp a:hover,
+.simple-vcr-videoapp a:visited {
+  color: #C13496;
+  transition: 0.7s;
+}
+
+/* Login */
+#login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 15%;
+  width: 250px;
+  margin: auto;
+  background: rgba(0,0,0,0);
+  font-size: 1.1em;
+}
+
+#login label {
+  margin-bottom: 5px;
+}
+#login-button {
+  border: none !important;
+}
+#login button,
+#login #login-button {
+  width: fit-content;
+  margin: auto auto;
+  background-color: black;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #2e2e2e;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.7s;
+  font-size: 1.1em;
+}
+#login button:hover,
+#login #login-button:hover {
+  background-color: #393939;
+  transition: 0.7s;
+}
+#login input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 1px #ddd;
+  padding: 6px 20px;
+}
+
+/* Controls & Notifications */
+.simple-vcr-videoapp #controls {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+.simple-vcr-videoapp #controls .wrapper {
+  padding: 5px 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.simple-vcr-videoapp #controls .red {
+  filter: invert(12%) sepia(60%) saturate(6286%) hue-rotate(356deg) brightness(128%) contrast(122%);
+}
+
+.simple-vcr-videoapp #controls button {
+  width: fit-content;
+  margin: 5px auto auto;
+  background-color: black;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #2e2e2e;
+  padding: 8px 20px;
+  border-radius: 10px;
+  transition: 0.7s;
+  font-size: 1.1em;
+}
+.simple-vcr-videoapp #controls button:hover,
+.simple-vcr-videoapp #controls button:focus {
+  background-color: #393939;
+  transition: 0.7s;
+}
+
+.simple-vcr-videoapp #controls img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(15deg) brightness(129%) contrast(100%);
+}
+
+.simple-vcr-videoapp label {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.simple-vcr-videoapp #controls img {
+  height: 24px;
+  width: 24px;
+}
+
+.simple-vcr-videoapp .loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #000000;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
